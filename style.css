@@ -1,9 +1,11 @@
-/* Reset */
+/* universal */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Segoe UI, Arial, sans-serif;
+  /* overflow-x:hidden ; */
+
 }
 
 /* Body */
@@ -73,6 +75,7 @@ nav ul li a{
     position: relative;
     max-width: 100%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .Slider{
@@ -140,7 +143,7 @@ animation: sideshow 15s infinite; /* aniamtion*/
 
 .ItemContainer{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 30px;
   flex-wrap: wrap;
 }
@@ -227,7 +230,7 @@ footer{
   padding-top: 10px;
 }
 /* responsive */
-@media(max-width:768px) {
+@media(max-width:768px){
     header{
         flex-direction: column;
         gap: 20px;
@@ -255,6 +258,9 @@ footer{
         padding: 5px 15px;
         font-size: 14px;
     } 
+    .Slider {
+   object-fit: hidden;
+    }
   footer {
     font-size: 14px;
   }
